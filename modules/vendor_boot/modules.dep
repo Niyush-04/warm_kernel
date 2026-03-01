@@ -1,5 +1,6 @@
 /lib/modules/debug-regulator.ko:
 /lib/modules/qcom_pm8008-regulator.ko: /lib/modules/debug-regulator.ko
+/lib/modules/miev.ko:
 /lib/modules/goodix_fp.ko: /lib/modules/panel_event_notifier.ko
 /lib/modules/clk-dummy.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko
 /lib/modules/bootinfo.ko:
@@ -10,6 +11,7 @@
 /lib/modules/eud.ko: /lib/modules/qcom-scm.ko
 /lib/modules/qcom-dload-mode.ko: /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko
 /lib/modules/qti-ocp-notifier.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko
+/lib/modules/mi_rmap_efficiency.ko:
 /lib/modules/cpu_hotplug.ko:
 /lib/modules/qcom-reboot-reason.ko:
 /lib/modules/coresight.ko:
@@ -94,7 +96,7 @@
 /lib/modules/msm_hw_fence.ko:
 /lib/modules/debug_symbol.ko:
 /lib/modules/heap_mem_ext_v01.ko: /lib/modules/qmi_helpers.ko
-/lib/modules/nt_36528a_spi.ko: /lib/modules/xiaomi_tp.ko /lib/modules/lct_tp.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/nt_36528a_spi.ko: /lib/modules/xiaomi_tp.ko /lib/modules/miev.ko /lib/modules/lct_tp.ko /lib/modules/panel_event_notifier.ko
 /lib/modules/qcom_sysmon.ko: /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko
 /lib/modules/gh_virt_wdt.ko: /lib/modules/qcom_wdt_core.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko
 /lib/modules/ucsi_glink.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko
@@ -144,7 +146,7 @@
 /lib/modules/lct_tp.ko:
 /lib/modules/slim-qcom-ngd-ctrl.ko: /lib/modules/slimbus.ko /lib/modules/pdr_interface.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko
 /lib/modules/qti_cpufreq_cdev.ko:
-/lib/modules/ft8057m_spi.ko: /lib/modules/xiaomi_tp.ko /lib/modules/lct_tp.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/ft8057m_spi.ko: /lib/modules/xiaomi_tp.ko /lib/modules/miev.ko /lib/modules/lct_tp.ko /lib/modules/panel_event_notifier.ko
 /lib/modules/socinfo.ko: /lib/modules/smem.ko
 /lib/modules/bcl_soc.ko:
 /lib/modules/stub-regulator.ko: /lib/modules/debug-regulator.ko
@@ -158,11 +160,11 @@
 /lib/modules/qti_userspace_cdev.ko:
 /lib/modules/qcom_pil_info.ko:
 /lib/modules/nvmem_qfprom.ko:
-/lib/modules/xiaomi_tp.ko:
+/lib/modules/xiaomi_tp.ko: /lib/modules/miev.ko
 /lib/modules/pinctrl-msm.ko: /lib/modules/qcom-scm.ko
 /lib/modules/hdcp_qseecom_dlkm.ko: /lib/modules/smcinvoke_dlkm.ko /lib/modules/qseecom_proxy.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko
 /lib/modules/mem_buf_dev.ko: /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko
-/lib/modules/msm_drm.ko: /lib/modules/spmi-pmic-arb.ko /lib/modules/qcom_va_minidump.ko /lib/modules/nt_36528a_spi.ko /lib/modules/xiaomi_tp.ko /lib/modules/lct_tp.ko /lib/modules/pinctrl-msm.ko /lib/modules/qcom_iommu_util.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/msm_drm.ko: /lib/modules/spmi-pmic-arb.ko /lib/modules/qcom_va_minidump.ko /lib/modules/nt_36528a_spi.ko /lib/modules/xiaomi_tp.ko /lib/modules/miev.ko /lib/modules/lct_tp.ko /lib/modules/pinctrl-msm.ko /lib/modules/qcom_iommu_util.ko /lib/modules/minidump.ko /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/smem.ko /lib/modules/debug_symbol.ko /lib/modules/qcom-scm.ko /lib/modules/panel_event_notifier.ko
 /lib/modules/binder_prio.ko:
 /lib/modules/slimbus.ko:
 /lib/modules/crypto-qti.ko: /lib/modules/qcom-scm.ko

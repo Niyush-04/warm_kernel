@@ -63,6 +63,8 @@ cqhci.ko
 ufs_qcom.ko
 ufshcd-crypto-qti.ko
 qcom-scm.ko
+miev.ko
+mi_rmap_efficiency.ko
 qcom-ipcc.ko
 msm_qmp.ko
 qcom_hwspinlock.ko
